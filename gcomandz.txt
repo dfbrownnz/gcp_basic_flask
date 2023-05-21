@@ -1,0 +1,35 @@
+Project name personalflask
+Project number 351370458645
+Project ID personalflask
+
+gcloud app deploy
+
+gcloud config set project MY-PROJECT-ID
+gcloud config set project personalflask
+
+gcloud app deploy
+
+
+Creating App Engine application in project [personalflask] and region [us-east4]....done.
+Services to deploy:
+
+descriptor:                  [C:\Users\dfbro\Desktop\code\py\gcp\flask1\app.yaml]
+source:                      [C:\Users\dfbro\Desktop\code\py\gcp\flask1]
+target project:              [personalflask]
+target service:              [default]
+target version:              [20230509t215327]
+target url:                  [https://personalflask.uk.r.appspot.com]
+target service account:      [personalflask@appspot.gserviceaccount.com]
+
+
+
+You can stream logs from the command line by running:
+  $ gcloud app logs tail -s default
+
+To view your application in the web browser run:
+  $ gcloud app browse
+
+gcloud projects delete MY-PROJECT-ID
+gcloud projects delete personalflask
+
+https://cloud.google.com/resource-manager/docs/creating-managing-projects
